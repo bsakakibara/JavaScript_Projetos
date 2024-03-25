@@ -145,7 +145,7 @@ checkoutBtn.addEventListener("click", function () {
     const isOpen = checkLocalOpen()
     if(!isOpen){
         Toastify({
-            text: "Ops o local está fechado!!",
+            text: "Vai tomar no Cú!!",
             duration: 3000,
             newWindow: true,
             close: true,
