@@ -9,7 +9,7 @@ module.exports = {
 
     extend: {
       backgroundImage:{
-        "home": "url('/Cardapio_js/assets/bg.png')"
+        "home": "url('./CardapioJS_TW/assets/bg.png')"
       }
     },
   },

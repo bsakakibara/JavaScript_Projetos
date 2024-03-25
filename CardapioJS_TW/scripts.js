@@ -142,12 +142,25 @@ addressInput.addEventListener("input", function (e) {
 
 checkoutBtn.addEventListener("click", function () {
 
-    // const isOpen = checkLocalOpen()
-    // if(!isOpen){
-    //     alert("Local fechado no momento!")
-    //     return
-    // }
+    const isOpen = checkLocalOpen()
+    if(!isOpen){
+        Toastify({
+            text: "Ops o local está fechado!!",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "#ef4444",
+            }
+            }).showToast()
+
+            return
+    }
     
+
 
     if (cart.length === 0) return
 
@@ -159,7 +172,7 @@ checkoutBtn.addEventListener("click", function () {
 
     const cartItems = cart.map((item) => {
         return(
-            `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} )`
+            `${item.name}\n Quantidade: (${item.quantity})\n Preço: R$${item.price}\n`
         )
 
     }).join("")
