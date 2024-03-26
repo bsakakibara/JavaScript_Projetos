@@ -1950,7 +1950,7 @@ video {
 }
 
 .bg-home {
-  background-image: url('./CardapioJS_TW/assets/bg.png');
+  background-image: url('/assets/bg.png');
 }
 
 .decoration-slice {

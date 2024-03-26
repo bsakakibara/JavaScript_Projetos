@@ -25,11 +25,11 @@ cartModal.addEventListener("click", function (e) {
     }
 })
 
-// cartModal.addEventListener("click", function(e){
-//     if(e.target === closeModalBtn){
-//         cartModal.style.display = "none"
-//     }
-// })
+cartModal.addEventListener("click", function(e){
+    if(e.target === closeModalBtn){
+        cartModal.style.display = "none"
+    }
+})
 
 closeModalBtn.addEventListener("click", function () {
     cartModal.style.display = "none"
@@ -192,7 +192,7 @@ checkoutBtn.addEventListener("click", function () {
 function checkLocalOpen(){
     const data = new Date()
     const hora = data.getHours()
-    return hora >= 8 && hora < 22
+    return hora >= 18 && hora < 22
 
 }
 
