@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch"
+    "dev": "npx tailwindcss -i ./CardapioJS_TW/styles/style.css -o ./CardapioJS_TW/styles/output.css --watch"
   },
   "keywords": [],
   "author": "",
