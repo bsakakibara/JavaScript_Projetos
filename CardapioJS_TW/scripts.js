@@ -192,7 +192,7 @@ checkoutBtn.addEventListener("click", function () {
 function checkLocalOpen(){
     const data = new Date()
     const hora = data.getHours()
-    return hora >= 18 && hora < 22
+    return hora >= 8 && hora < 22
 
 }
 
